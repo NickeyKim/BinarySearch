@@ -36,7 +36,7 @@ namespace BinarySearh
 					return center;
 				} else if (target < array [center]) {
 					upper = center - 1; 
-				ㄴ	} else { 
+					} else { 
 					lower = center + 1;
 				}
 			}
@@ -67,8 +67,8 @@ namespace BinarySearh
 		public static void Main(string[] args) {
 			int[] testArray = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 			try {
-				Console.WriteLine(binarySearch(testArray, 6));
-				Console.WriteLine(iterBinarySearch(testArray, 5));
+				Console.WriteLine("Searching 6 :"+binarySearch(testArray, 6));
+				Console.WriteLine("Searching 5 :"+iterBinarySearch(testArray, 5));
 
 			} catch (Exception e) {
 				Console.WriteLine(e.Message);
